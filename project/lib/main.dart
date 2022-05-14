@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:project/widget/enable_local_auth_modal_bottom_sheet.dart';
+import 'package:flutter/services.dart';
+import 'page/fingerprint_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,7 +11,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
+  static const String title = 'Local Auth';
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: FingerprintPage(),
     );
   }
 }
