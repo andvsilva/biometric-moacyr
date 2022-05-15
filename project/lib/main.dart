@@ -72,7 +72,7 @@ class _LocalAuthState extends State<LocalAuth> {
       print("error biome trics $e");
     }
 
-    print("biometric is avhttps://medium.flutterdevs.com/local-authentication-in-flutter-1dc27647060cailable: $canCheckBiometrics");
+    print("biometric is available: $canCheckBiometrics");
 
     // enumerate biometric technologies
     List<BiometricType> availableBiometrics;
@@ -107,7 +107,7 @@ class _LocalAuthState extends State<LocalAuth> {
     setState(() {
       isAuth = authenticated ? true : false;
     });
-
+    
     print(">>> authenticated: $authenticated");
   }
 }
