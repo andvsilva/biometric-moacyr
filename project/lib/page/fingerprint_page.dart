@@ -80,9 +80,9 @@ class FingerprintPage extends StatelessWidget {
       );
 
   Widget buildButton({
-    @required String text='null',
-    @required IconData icon,
-    @required VoidCallback onClicked,
+    required String text,
+    required IconData icon,
+    required VoidCallback onClicked,
   }) =>
       ElevatedButton.icon(
         style: ElevatedButton.styleFrom(
