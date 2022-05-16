@@ -107,7 +107,6 @@ class _LocalAuthState extends State<LocalAuth> {
     setState(() {
       isAuth = authenticated ? true : false;
     });
-    
     print(">>> authenticated: $authenticated");
   }
 }
