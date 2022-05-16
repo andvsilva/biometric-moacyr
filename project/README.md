@@ -12,3 +12,12 @@ A Flutter project - Authentication using the biometric.
 Error: Unsupported operation - Web app
 ```
 ![](images/fingerprint_auth.png)
+
+```bash
+# requirements for this project.
+# requirements.txt
+pip3 freeze > requirements.txt
+
+# Install pre requirements, make the command below:
+$ pip install -r requirements.txt
+```
